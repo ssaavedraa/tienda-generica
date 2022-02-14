@@ -1,0 +1,32 @@
+<div class="navbar navbar-expand-lg navbar-light bg" style="height: 50px;" *ngIf="checkSession()">
+    <div class="align-items-center" id="header">
+      <ul class="menu">
+        <li><a routerLink="" class="navlink"> Inicio </a></li>
+        <li><a class="nav-link">Usuarios</a>
+          <ul>
+            <li><a class="nav-link" routerLink="agregarUsr">Crear</a></li>
+            <li><a class="nav-link" routerLink="consultarUsr">Consultar</a></li>
+            <li><a class="nav-link" routerLink="eliminarUsr">Eliminar</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link">Clientes</a>
+          <ul>
+            <li><a class="nav-link" routerLink="agregarCliente">Crear</a></li>
+            <li><a class="nav-link" routerLink="consultarCliente">Consultar</a></li>
+            <li><a class="nav-link" routerLink="eliminarCliente">Eliminar</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link">Proveedores</a>
+          <ul>
+            <li><a class="nav-link" routerLink="agregarProveedores">Crear</a></li>
+            <li><a class="nav-link" routerLink="consultarProveedores">Consultar</a></li>
+            <li><a class="nav-link" routerLink="eliminarProveedores">Eliminar</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" routerLink="productos">Productos</a></li>
+        <li><a class="nav-link" routerLink="ventas">Ventas</a></li>
+        <li><a class="nav-link" routerLink="reportes">Reportes</a></li>
+      </ul>
+      <li><a class="nav-link login" (click)="closeSession()">{{ session }}</a></li>
+    </div>
+  </div>

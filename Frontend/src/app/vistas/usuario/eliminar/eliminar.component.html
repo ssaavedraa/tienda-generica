@@ -1,0 +1,12 @@
+<h1 style="text-align: center; margin-top: 5%;"> Eliminar usuario </h1>
+
+<form style="margin-top: 30px; height: 100%;">
+  <div class="container px-4">
+    <label for="cedula" class="form-label">Ingrese la cédula:</label>
+    <input #cedulaUsuario type="text" class="form-control">
+  </div>
+
+  <div class="d-flex justify-content-center" style="text-align:center; margin-top: 30px;">
+    <button class="btn btn-primary" name="button" (click)="eliminar(cedulaUsuario.value)">Eliminar usuario</button>
+  </div>
+</form>

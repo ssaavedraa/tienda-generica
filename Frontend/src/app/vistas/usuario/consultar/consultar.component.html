@@ -1,0 +1,19 @@
+<div class="container px-4">
+  <h1> Lista de usuarios</h1>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"><h3>Cedula</h3></th>
+        <th scope="col"><h3>Email</h3></th>
+        <th scope="col"><h3>Nombre</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios" (click)="actualizarUsuario(usuario.cedula_usuario)">
+        <td>{{ usuario.cedula_usuario }}</td>
+        <td>{{ usuario.email_usuario }}</td>
+        <td>{{ usuario.nombre_usuario }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

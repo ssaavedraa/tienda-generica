@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg{
+    background-color: #262626;
+}
+
+#header{
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.menu li a{
+    background-color: #262626;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu li a:hover{
+    background-color: #434343;
+    cursor: pointer;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.nav-link{
+    color: white;
+}
+
+.login{
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    padding: 12px 15px;
+}
+
+.login:hover{
+    color: white;
+    background-color: #434343;
+}
